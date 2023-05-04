@@ -285,6 +285,16 @@ iframe{
     margin: 20px;
 }
 
+.registrar h1{
+    color: #fff;
+    font-family: fantasy;
+    margin-top: 40px;
+    padding: 30px;
+    text-shadow: 0 0 5px orange;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+}
+
 .contenedor {
     width: 100%;
     height: auto;
