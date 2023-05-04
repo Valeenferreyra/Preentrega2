@@ -32,40 +32,97 @@
     </header>
 
 
-<main> 
-    <div class="registrar">
-        <h1>REGISTRATE</h1>
+
+    <div class="registrar_bootstrap">
+        <form class="row g-3 mt-3">
+
+            <div class="col-6">
+                <label for="name_input" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name_input" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="col-6">
+                <label for="lastname_input" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastname_input" placeholder="Escribe tu apellido">
+            </div>
+
+            <div class="col-6">
+                <label for="email_input" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email_input" placeholder="Escribe tu email">
+            </div>
+            <div class="col-6">
+                <label for="input_pass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="input_pass" placeholder="Escribe tu contraseña">
+            </div>
+
+            <div class="col-12">
+                <label for="input_address">Dirección</label>
+                <input type="text" class="form-control" id="input_address" placeholder="Dirección">
+            </div>
+
+            <div class="col-12">
+                <label for="input_address">Dirección 2</label>
+                <input type="text" class="form-control" id="input_address" placeholder="Dirección 2">
+            </div>
+
+            <div class="col-6">
+                <label for="input_city" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="input_city" placeholder="Ciudad">
+            </div>
+
+            <div class="col-3">
+                <label for="input_postal" class="form-label">Codigo postal</label>
+                <input type="number" class="form-control" id="input_postal" placeholder="Codigo postal">
+            </div>
+
+            <div class="col-3">
+                <label for="input_country" class="form-label">País</label>
+                <input type="text" class="form-control" id="input_country" placeholder="País">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Subir</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Hombre
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Mujer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">
+                    No binario
+                </label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Cuentanos sobre ti..." id="floatingTextarea2" style="height: 100px">Cuéntanos sobre ti...</textarea>
+                <label for="floatingTextarea2"></div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check_terms" placeholder="Dirección 2">
+                    <label for="check_terms" class="form-check- label">Acepto los términos</label>
+                </div>
+                
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                        Registrate
+                    </button>
+                    </div>
+                
+            </div>
+
+        </form>
     </div>
-    <div class="divRegistrate"></div>
-    <form action="enviar.php" method="psot" enctype="application/x-www-form-urlencoded" netlify>
 
-    <label for="">Nombre:</label>
-    <input type="text" placeholder="escribe tu nombre">
-    <label for="">Apellido:</label>
-    <input type="text" placeholder="escribe tu apellido"> <br>
-    <label for="">Contraseña</label>
-    <input type="password" placeholder="escribe tu contraseña"> <br>
-    <label for="">Email</label>
-    <input type="email" placeholder="escribe tu email"> <br>
-    <label for="">Edad</label>
-    <input type="number" placeholder="escribe tu tu edad"> <br>
-    Fecha <input type="date" placeholder="fecha"><br>
-    Adjuntar archivo <input type="file" placeholder="archivo">
-    Telefono <input type="text" placeholder="telefono"><br><br>
-    <label for="">Descripción</label> <br>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Deja una descripción personal"></textarea>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Borrar Todo">
-    <br><br>
-    <h2>Selecciona tu genero</h2>
-    <label for="">Genero:</label> <br>
-    Hombre<input type="radio" name="sexo"> <br>
-    Mujer<input type="radio" name="sexo"> <br>
-    Sin especificar<input type="radio" name="sexo" checked> <br>
-</div>
-
-</form>
-</main>    
 
 <footer>
     <p>Todos los derechos son reservados por copyright</p>
