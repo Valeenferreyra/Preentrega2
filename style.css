@@ -13,13 +13,26 @@ body{
     background-position: center;
     text-align: center;
     height: calc(100vh - 80px - 100px);
-
-    
 }
 
-main{
+/* .mainIndex{
+    height: 100vh;
+} */
+/* .mainHistoria{
+    height: 100vh;
+} */
+
+/* .mainCanciones{
+    height: 100vh;
+} */
+
+.mainContacto{
     height: 100vh;
 }
+.mainRegistrate{
+    height: 100vh;
+}
+
 
 header{
     display: flex;
@@ -46,10 +59,7 @@ nav{
     height: 80px;
     width: 100%;
 }
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-}
+
 
 nav ul{
     display: flex;
@@ -96,6 +106,11 @@ li a.active, li a:hover{
     padding-right: 10px;
 }
 
+.extra{
+    color: rgb(11, 11, 12);
+    padding-bottom: 40px;
+    margin-bottom: 150px;
+}
 
 
 main h1{
@@ -330,7 +345,7 @@ iframe{
     align-items: center;
 }
 .card{
-    width: 30%;
+    width: 40%;
     min-height: 350px;
     background-color: orange;
     text-align: center;
@@ -933,7 +948,7 @@ padding: 2px;
 
 
 footer{
-    background-color: rgb(255, 165, 0, 0.75);
+        background-color: rgb(255, 165, 0, 0.75);
     height: 100px;
     width: 100%;
 }
@@ -983,9 +998,7 @@ footer p{
         width: 100%;
         height: 100vh;
         background: #2c3e50;
-        top: 80px;
-        
-    
+        top: 90px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -1012,14 +1025,15 @@ footer p{
         display: flex;
         flex-direction: column;
     }
-    figure{
-        width: 20px;
-        height: 20auto;
-    }
+    
     main{
         font-size: 20px;
     }
+    .card{
+        width: 50%;
+    }
     
+        
 }
 
 @media (max-width: 700px){
@@ -1031,18 +1045,23 @@ footer p{
         font-size: 20px;
         transition: all .4s;
     }
+
+    .card{
+        width: 60%;
+    }
     
 
 }
 
-@media (max-width: 350px){
+@media (max-width: 380px){
     
     main h1{
         font-size: 20px;
     }
     figure img{
         padding: 30px;
-        
-    
-}
+    }
+        .card{
+            width: 80%;
+        }
 }
