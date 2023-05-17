@@ -1,0 +1,31 @@
+footer{
+    background-color: rgb(255, 165, 0, 0.75);
+height: 100px;
+width: 100%;
+}
+
+footer p{
+text-align: center;
+color: #fff;
+padding-top: 5px;
+margin-bottom: 10px;
+font-size: 20px;
+}
+
+.redes{
+list-style: none;
+display: inline-block;
+color: #fff;
+}
+
+.redes a{
+text-align: center;
+color: $color5;
+font-size: 30px;
+margin: 5px;   
+}
+
+.redes a:hover{
+text-shadow: 0 0 5px, 0 0 5px $color1;
+color: #fff;
+}

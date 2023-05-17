@@ -1,0 +1,144 @@
+.canciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+        a{
+            text-decoration: none;
+        
+        }
+}
+
+.canciones a h3:hover{
+    color: $color5;
+    text-shadow: 0 0 5px $color2;
+}
+.albumes{
+    width: 40%;
+    min-height: 250px;
+    background-color: $color1;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10px;
+    transition: all 1.1s;
+    padding: 1px;
+}
+
+.albumes:hover{
+    box-shadow: 0 0 5px 5px #fff;
+    transform: scale(1.09);
+    transition: all 1.1s;
+}
+
+
+.card-img1{
+background-image: url(.//img/3arco.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img2{
+background-image: url(.//img/maquinasangre.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img3{
+background-image: url(.//img/azul.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img4{
+background-image: url(.//img/ayayay.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img5{
+background-image: url(.//img/verdepaisaje.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img6{
+background-image: url(.//img/chac.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img7{
+background-image: url(.//img/civilizacion.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img8{
+background-image: url(.//img/huracanes.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img9{
+background-image: url(.//img/fantasmas.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img10{
+background-image: url(.//img/queplacer.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img11{
+background-image: url(.//img/27.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img12{
+background-image: url(.//img/espejos.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img13{
+background-image: url(.//img/naranjapersa.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img14{
+background-image: url(.//img/naranjapersa2.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img15{
+background-image: url(.//img/guerras.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+.card-img16{
+background-image: url(.//img/sueños.jpg);
+background-size: cover;
+background-position: center;
+height: 180px;
+}
+
+
+
+.card-title{
+    font-family: $font1;
+    font-size: 20px;
+    color: $color4;
+    text-shadow: 0 0 5px $color5;
+    font-weight: 400;
+    // line-height: 100px;
+    // margin: 10px;
+    padding-top: 18px;
+}
