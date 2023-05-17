@@ -1,18 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@400;500&family=Yanone+Kaffeesatz&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: sans-serif;
-    background-image: url(.//img/FONDOCIROANDRES.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    text-align: center;
-    height: calc(100vh - 80px - 100px);
+body {
+  font-family: red;
+  background-image: url(.//img/FONDOCIROANDRES.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  height: calc(100vh - 80px - 100px);
 }
 
 /* .mainIndex{
@@ -21,1047 +26,1078 @@ body{
 /* .mainHistoria{
     height: 100vh;
 } */
-
 /* .mainCanciones{
     height: 100vh;
 } */
-
-.mainContacto{
-    height: 100vh;
-}
-.mainRegistrate{
-    height: 100vh;
+.mainContacto {
+  height: 100vh;
 }
 
-
-header{
-    display: flex;
-    justify-content: space-between;
-    min-height: 80px;
-    background-color: orange;
-    align-items: center;
-    text-align: center;
+.mainRegistrate {
+  height: 100vh;
 }
 
-header a{
-    text-decoration: none;
-    color: #fff;
-    font-family: fantasy;
-    padding-top: 10px;
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  background-color: rgb(255, 153, 0);
+  align-items: center;
+  text-align: center;
 }
 
-header a:hover{
-    color: #000;
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Bebas Neue;
+  padding-top: 10px;
 }
 
-nav{
-
-    height: 80px;
-    width: 100%;
+header a:hover {
+  color: #000;
 }
 
-
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: #fff;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-li a.active, li a:hover{
-    background: #000;
-    transition: .5s;
-}
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-.logo{
-    display: flex;
-    align-items: center;
+nav {
+  height: 80px;
+  width: 100%;
 }
 
-.logo img{
-    height: 60px;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 10px;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
 }
 
-.extra{
-    color: rgb(11, 11, 12);
-    padding-bottom: 40px;
-    margin-bottom: 150px;
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
-
-main h1{
-    color: #fff;
-    background-color: rgb(255, 165, 0, 0.45);
-    border-radius: 50px;
-    margin-top: 50px;
-    align-items: center;
-    text-align: center;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px;
-    font-weight: 20px;
-    font-size: 30px;
-    transition: transform 350ms;
-    
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
-main h1:hover{
-    box-shadow: 0 0 5px #fff;
-    transform: scale(1.1);
-    background-color: rgb(255, 165, 0, 0.65);
-}
-span{
-    color: black;
-}
-span:hover{
-    color: #fff;
+li a.active, li a:hover {
+  background: #000;
+  transition: 0.5s;
 }
 
-main{
-    color: #fff;
-    
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
-.imagenes{
-    width: 100%;
-    display: flex;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 25px;
-}
-.imagenes figure{
-    position: relative;
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: 0px 10px 25px rgb(245, 242, 242);
-    cursor: pointer;
-    margin: 20px;
+#check {
+  display: none;
 }
 
-.imagenes figure img{
-width: 100%;
-height: 100%;
-transition: all 500ms ease-out;
-}
-.imagenes figure .capa{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 123, 0, 0.7);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.imagenes figure:hover > .capa{
-    opacity: 1;
-    visibility: visible;
+.logo img {
+  height: 60px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 
-.imagenes figure:hover > .capa h3{
-margin-top: 70px;
-margin-bottom: 15px;
+.extra {
+  color: rgb(11, 11, 12);
+  padding-bottom: 40px;
+  margin-bottom: 150px;
 }
 
-.imagenes figure:hover > img{
-    transform: scale(1.3);
+main h1 {
+  color: #fff;
+  background-color: rgba(255, 165, 0, 0.45);
+  border-radius: 50px;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  font-weight: 20px;
+  font-size: 30px;
+  transition: transform 350ms;
 }
 
-.imagenes figure .capa h3{
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-    text-shadow: 0 0 5px #fff;
+main h1:hover {
+  box-shadow: 0 0 5px #fff;
+  transform: scale(1.1);
+  background-color: rgba(255, 165, 0, 0.65);
 }
 
-.imagenes figure .capa p{
-color: #fff;
-font-weight: 200;
-font-size: 15px;
-line-height: 1.5;
-width: 80%;
-margin: auto;
+span {
+  color: black;
+}
+
+span:hover {
+  color: #fff;
+}
+
+main {
+  color: #fff;
+}
+
+.imagenes {
+  width: 100%;
+  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.imagenes figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 10px 25px rgb(245, 242, 242);
+  cursor: pointer;
+  margin: 20px;
+}
+
+.imagenes figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.imagenes figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 123, 0, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.imagenes figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.imagenes figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.imagenes figure:hover > img {
+  transform: scale(1.3);
+}
+
+.imagenes figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+  text-shadow: 0 0 5px #fff;
+}
+
+.imagenes figure .capa p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 80%;
+  margin: auto;
 }
 
 span1 {
-    color: #000;
-    text-shadow: 0 0 5px #000;
+  color: #000;
+  text-shadow: 0 0 5px #000;
 }
 
 .content {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 0 0 5px orange;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 0 0 5px rgb(255, 153, 0);
 }
 
-
-.content a{
-    background-color: orange;
-    padding: 20px;
-    margin: 10px;
-    line-height: 100px;
-    font-size: 60px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
-    transition: .2s;
-    filter: blur(2px);
+.content a {
+  background-color: rgb(255, 153, 0);
+  padding: 20px;
+  margin: 10px;
+  line-height: 100px;
+  font-size: 60px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  filter: blur(2px);
 }
 
-.content p{
-    font-size: 20px;
+.content p {
+  font-size: 20px;
 }
 
-.musica:hover a{
-    filter: none;
-    background-color:  #000;
+.musica:hover a {
+  filter: none;
+  background-color: #000;
 }
 
-.historia:hover a{
-    filter: none;
-    background-color:  #000;
+.historia:hover a {
+  filter: none;
+  background-color: #000;
 }
 
-.subir{
-    background-color: #fff;
-    height: 30px;
-    width: 30px;
-    border: 3px solid rgb(255, 165, 0, 0.75);
-    line-height: 28px;
-    font-size: 30px;
-    text-align: center;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-}
-.subir:hover{
-    box-shadow: 0 0 5px orange;
+.subir {
+  background-color: #fff;
+  height: 30px;
+  width: 30px;
+  border: 3px solid rgba(255, 165, 0, 0.75);
+  line-height: 28px;
+  font-size: 30px;
+  text-align: center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
 }
 
-.historias{
-    color: #fff;
-    font-family: fantasy;
-    margin-top: 40px;
-    padding: 30px;
-    text-shadow: 0 0 5px orange;
-    transition: all 500ms ease-out;
-    cursor: pointer;
+.subir:hover {
+  box-shadow: 0 0 5px rgb(255, 153, 0);
 }
 
-.historias img{
-    box-shadow: 0 0 5px orange;
-    border-radius: 60%;
-    margin: 30px;
-    margin-bottom: 10px;
+.historias {
+  color: #fff;
+  font-family: Bebas Neue;
+  margin-top: 40px;
+  padding: 30px;
+  text-shadow: 0 0 5px rgb(255, 153, 0);
+  transition: all 500ms ease-out;
+  cursor: pointer;
 }
 
-.historias h1:hover{
-    text-shadow: 0 0 5px, 0 0 5px orange;
-    transform: scale(1.1);
-    transition: all 500ms ease-out;
+.historias img {
+  box-shadow: 0 0 5px rgb(255, 153, 0);
+  border-radius: 60%;
+  margin: 30px;
+  margin-bottom: 10px;
 }
 
-.texto{
-    color: orange;
-    text-shadow: 0 0 5px #000;
-    padding: 20px;
-    margin: 20px;
-}
-.texto1{
-    color: orange;
-    text-shadow: 0 0 5px, 0 0 5px #ffffffab;
-    padding: 20px;
-    margin: 20px;
-    font-family: cursive;
-}
-.p{
-    color: #fff;
-    text-shadow: 0 0 5px orange;
+.historias h1:hover {
+  text-shadow: 0 0 5px, 0 0 5px rgb(255, 153, 0);
+  transform: scale(1.1);
+  transition: all 500ms ease-out;
 }
 
-iframe{
-    padding: 20px;
-    margin: 20px;
+.texto {
+  color: rgb(255, 153, 0);
+  text-shadow: 0 0 5px #000;
+  padding: 20px;
+  margin: 20px;
 }
 
-.video{
-    padding: 20px;
-    margin: 20px;
-    
+.texto1 {
+  color: rgb(255, 153, 0);
+  text-shadow: 0 0 5px, 0 0 5px rgba(255, 255, 255, 0.6705882353);
+  padding: 20px;
+  margin: 20px;
+  font-family: cursive;
 }
 
-.img{
-    padding: 20px;
-    margin: 20px;
+.p {
+  color: #fff;
+  text-shadow: 0 0 5px rgb(255, 153, 0);
 }
 
-.row{
-    color: orange;
-    text-shadow: 0 0 5px #000;
-    font-weight: 400;
+iframe {
+  padding: 20px;
+  margin: 20px;
 }
 
-.form-check{
-    margin-left: 100px;;
+.video {
+  padding: 20px;
+  margin: 20px;
 }
 
-.team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card{
-    width: 40%;
-    min-height: 350px;
-    background-color: orange;
-    text-align: center;
-    border-radius: 7px;
-    margin-top: 40px;
-    transition: all 1.1s;
+.img {
+  padding: 20px;
+  margin: 20px;
 }
 
-.card:hover{
-    box-shadow: 0 0 5px 5px #fff;
-    transform: scale(1.09);
-    transition: all 1.1s;
+.row {
+  color: rgb(255, 153, 0);
+  text-shadow: 0 0 5px #000;
+  font-weight: 400;
 }
 
-
-.card-img{
-background-image: url(.//img/foto\ coder\ perfil.jpg);
-background-size: cover;
-background-position: center;
-height: 180px;
-}
-.card-title3{
-    font-family: fantasy;
-    font-size: 30px;
-    color: #fff;
-    text-shadow: 0 0 5px #000;
-    font-weight: 400;
-    margin: 10px;
-    padding: 2px;
-}
-.redescard{
-    padding-bottom: 20px;
+.form-check {
+  margin-left: 100px;
 }
 
-.redescard a:hover{
-    color: #000;
-}
-.card-title4{
-font-family: fantasy;
-font-size: 20px;
-font-weight: 400;
-margin: 5px;
-padding: 2px;
-}
-.card p{
-    padding: 20px;
-    font-family: cursive;
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.redescard a{
-    color: #fff;
-    font-size: 30px;
-    letter-spacing: 10px;
-
+.card {
+  width: 40%;
+  min-height: 350px;
+  background-color: rgb(255, 153, 0);
+  text-align: center;
+  border-radius: 7px;
+  margin-top: 40px;
+  transition: all 1.1s;
 }
 
-.form-floating{
-    padding: 30px;
+.card:hover {
+  box-shadow: 0 0 5px 5px #fff;
+  transform: scale(1.09);
+  transition: all 1.1s;
 }
+
+.card-img {
+  background-image: url(.//img/foto\ coder\ perfil.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
+.card-title3 {
+  font-family: Bebas Neue;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  font-weight: 400;
+  margin: 10px;
+  padding: 2px;
+}
+
+.redescard {
+  padding-bottom: 20px;
+}
+
+.redescard a:hover {
+  color: #000;
+}
+
+.card-title4 {
+  font-family: Bebas Neue;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px;
+  padding: 2px;
+}
+
+.card p {
+  padding: 20px;
+  font-family: cursive;
+}
+
+.redescard a {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+.form-floating {
+  padding: 30px;
+}
+
 .contenedor {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(20, 200px);
+  grid-template-areas: "img1 img1" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12" "img13 img14" "img15 img16" "img17 img18" "img19 img20" "img21 img21" "img23 img24" "img25 img26" "img27 img28" "img29 img30" "img31 img32" "img33 img34" "img35 img36";
+  padding: 10px;
+  grid-gap: 20px;
+}
+
+.item {
+  border: 5px solid rgba(255, 166, 0, 0.644);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px red;
+  transition: all 500ms ease-out;
+}
+
+.item a {
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  font-family: Bebas Neue;
+}
+
+.item a:hover {
+  text-shadow: 0 0 5px, 0 0 5px red;
+}
+
+.item p {
+  margin: 70px;
+  font-size: 30px;
+}
+
+.item:hover {
+  box-shadow: 0 0 5px, 0 0 5px #ff0202;
+  transform: scale(1.1);
+}
+
+.item1 {
+  grid-area: img1;
+  background-image: url(.//img/ciro\ y\ los\ piojos.png);
+}
+
+.item1 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0 0 5px #fff;
+  cursor: pointer;
+  padding: 0px;
+  margin: 60px;
+  font-size: 60px;
+}
+
+.item1 p:hover {
+  text-shadow: 0 0 5px red;
+}
+
+.item2 {
+  grid-area: img2;
+  background-image: url(.//img/3arco.jpg);
+}
+
+.item3 {
+  grid-area: img3;
+  background-image: url(.//img/3arco.jpg);
+}
+
+.item3 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item3 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item4 {
+  grid-area: img4;
+  background-image: url(.//img/3arco.jpg);
+}
+
+.item4 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item4 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item5 {
+  grid-area: img5;
+  background-image: url(.//img/maquinasangre.jpg);
+}
+
+.item5 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item5 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item6 {
+  grid-area: img6;
+  background-image: url(.//img/maquinasangre.jpg);
+}
+
+.item6 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item6 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item7 {
+  grid-area: img7;
+  background-image: url(.//img/azul.jpg);
+}
+
+.item7 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item7 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item8 {
+  grid-area: img8;
+  background-image: url(.//img/azul.jpg);
+}
+
+.item8 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item8 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item9 {
+  grid-area: img9;
+  background-image: url(.//img/ayayay.jpg);
+}
+
+.item9 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item9 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item10 {
+  grid-area: img10;
+  background-image: url(.//img/ayayay.jpg);
+}
+
+.item10 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item10 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item11 {
+  grid-area: img11;
+  background-image: url(.//img/verdepaisaje.jpg);
+}
+
+.item11 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item11 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item12 {
+  grid-area: img12;
+  background-image: url(.//img/verdepaisaje.jpg);
+}
+
+.item12 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item12 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item13 {
+  grid-area: img13;
+  background-image: url(.//img/chac.jpg);
+}
+
+.item13 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item13 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item14 {
+  grid-area: img14;
+  background-image: url(.//img/chac.jpg);
+}
+
+.item14 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item14 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item15 {
+  grid-area: img15;
+  background-image: url(.//img/civilizacion.jpg);
+}
+
+.item15 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item15 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item16 {
+  grid-area: img16;
+  background-image: url(.//img/civilizacion.jpg);
+}
+
+.item16 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item16 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item17 {
+  grid-area: img17;
+  background-image: url(.//img/huracanes.jpg);
+}
+
+.item17 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item17 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item18 {
+  grid-area: img18;
+  background-image: url(.//img/huracanes.jpg);
+}
+
+.item18 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item18 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item19 {
+  grid-area: img19;
+  background-image: url(.//img/fantasmas.jpg);
+}
+
+.item19 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item19 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item20 {
+  grid-area: img20;
+  background-image: url(.//img/fantasmas.jpg);
+}
+
+.item20 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item20 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item21 {
+  grid-area: img21;
+  background-image: url(.//img/ciro\ con\ ciro\ y\ los\ persas.png);
+}
+
+.item21 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0 0 5px #fff;
+  cursor: pointer;
+  padding: 0px;
+  margin: 60px;
+  font-size: 60px;
+}
+
+.item21 p:hover {
+  text-shadow: 0 0 5px red;
+}
+
+.item22 {
+  grid-area: img22;
+  background-image: url(.//img/ciro\ con\ ciro\ y\ los\ persas.png);
+}
+
+.item23 {
+  grid-area: img23;
+  background-image: url(.//img/queplacer.jpg);
+}
+
+.item23 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item23 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item24 {
+  grid-area: img24;
+  background-image: url(.//img/queplacer.jpg);
+}
+
+.item24 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item24 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item25 {
+  grid-area: img25;
+  background-image: url(.//img/27.jpg);
+}
+
+.item25 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item25 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item26 {
+  grid-area: img26;
+  background-image: url(.//img/27.jpg);
+}
+
+.item26 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item26 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item27 {
+  grid-area: img27;
+  background-image: url(.//img/espejos.jpg);
+}
+
+.item27 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item27 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item27 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item27 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item28 {
+  grid-area: img28;
+  background-image: url(.//img/espejos.jpg);
+}
+
+.item28 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item28 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item29 {
+  grid-area: img29;
+  background-image: url(.//img/naranjapersa.jpg);
+}
+
+.item29 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item29 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item30 {
+  grid-area: img30;
+  background-image: url(.//img/naranjapersa.jpg);
+}
+
+.item30 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item30 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item31 {
+  grid-area: img31;
+  background-image: url(.//img/naranjapersa2.jpg);
+}
+
+.item31 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item31 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item32 {
+  grid-area: img32;
+  background-image: url(.//img/naranjapersa2.jpg);
+}
+
+.item32 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item32 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item33 {
+  grid-area: img33;
+  background-image: url(.//img/guerras.jpg);
+}
+
+.item33 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item33 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item34 {
+  grid-area: img34;
+  background-image: url(.//img/guerras.jpg);
+}
+
+.item34 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item34 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item35 {
+  grid-area: img35;
+  background-image: url(.//img/sueños.jpg);
+}
+
+.item35 a {
+  color: red;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item35 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+.item36 {
+  grid-area: img36;
+  background-image: url(.//img/sueños.jpg);
+}
+
+.item36 a {
+  color: green;
+  text-shadow: 0 0 5px, 0 0 5px #000;
+}
+
+.item36 a:hover {
+  text-shadow: 0 0 5px, 0 0 5px #fff;
+  font-size: 33px;
+}
+
+footer {
+  background-color: rgba(255, 165, 0, 0.75);
+  height: 100px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.redes {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+}
+
+.redes a {
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.redes a:hover {
+  text-shadow: 0 0 5px, 0 0 5px rgb(255, 153, 0);
+  color: #fff;
+}
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    flex-direction: column;
     width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(20, 200px);
-    grid-template-areas: 
-    "img1 img1"
-    "img3 img4"
-    "img5 img6"
-    "img7 img8"
-    "img9 img10"
-    "img11 img12"
-    "img13 img14"
-    "img15 img16"
-    "img17 img18"
-    "img19 img20"
-    "img21 img21"
-    "img23 img24"
-    "img25 img26"
-    "img27 img28"
-    "img29 img30"
-    "img31 img32"
-    "img33 img34"
-    "img35 img36";
-
-    padding: 10px;
-    grid-gap: 20px;
-    
-}
-
-.item{
-    border: 5px solid rgba(255, 166, 0, 0.644);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 5px #ff0101;
-    transition: all 500ms ease-out;
-    
-}
-
-.item a{
-    text-decoration: none;
-    
-    text-shadow: 0 0 5px #000;
-    font-family: fantasy;
-}
-
-
-.item a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #0000003b;
-    
-    
-}
-
-.item p{
-    margin: 70px;
-    font-size: 30px;
-}
-
-
-
-.item:hover{
-    box-shadow: 0 0 5px, 0 0 5px #ff0202 ;
-    transform: scale(1.1);
-
-}
-.item1{
-    grid-area: img1;
-    background-image: url(.//img/ciro\ y\ los\ piojos.png);
-}
-.item1 p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0 0 5px #fff;
-    cursor: pointer;
-    padding: 0px;
-    margin: 60px;
-    font-size: 60px;
-}
-
-.item1 p:hover{
-    text-shadow: 0 0 5px red;
-
-}
-
-.item2{
-    grid-area: img2;
-    background-image: url(.//img/3arco.jpg)
-}
-
-.item3{
-    grid-area: img3;
-    background-image: url(.//img/3arco.jpg)
-}
-
-.item3 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item3 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-
-
-.item4{
-    grid-area: img4;
-    background-image: url(.//img/3arco.jpg)
-}
-.item4 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item4 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item5{
-    grid-area: img5;
-    background-image: url(.//img/maquinasangre.jpg)
-}
-.item5 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item5 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item6{
-    grid-area: img6;
-    background-image: url(.//img/maquinasangre.jpg)
-}
-.item6 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item6 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item7{
-    grid-area: img7;
-    background-image: url(.//img/azul.jpg)
-}
-.item7 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item7 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item8{
-    grid-area: img8;
-    background-image: url(.//img/azul.jpg)
-}
-.item8 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item8 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item9{
-    grid-area: img9;
-    background-image: url(.//img/ayayay.jpg)
-}
-.item9 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item9 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item10{
-    grid-area: img10;
-    background-image: url(.//img/ayayay.jpg)
-}
-.item10 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item10 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item11{
-    grid-area: img11;
-    background-image: url(.//img/verdepaisaje.jpg)
-}
-.item11 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item11 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item12{
-    grid-area: img12;
-    background-image: url(.//img/verdepaisaje.jpg)
-}
-.item12 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item12 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item13{
-    grid-area: img13;
-    background-image: url(.//img/chac.jpg)
-}
-.item13 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item13 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item14{
-    grid-area: img14;
-    background-image: url(.//img/chac.jpg)
-}
-.item14 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item14 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item15{
-    grid-area: img15;
-    background-image: url(.//img/civilizacion.jpg)
-}
-.item15 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item15 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item16{
-    grid-area: img16;
-    background-image: url(.//img/civilizacion.jpg)
-}
-.item16 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item16 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item17{
-    grid-area: img17;
-    background-image: url(.//img/huracanes.jpg)
-}
-.item17 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item17 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item18{
-    grid-area: img18;
-    background-image: url(.//img/huracanes.jpg)
-}
-.item18 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item18 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item19{
-    grid-area: img19;
-    background-image: url(.//img/fantasmas.jpg)
-}
-.item19 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item19 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item20{
-    grid-area: img20;
-    background-image: url(.//img/fantasmas.jpg)
-}
-.item20 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item20 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-
-.item21{
-    grid-area: img21;
-    background-image: url(.//img/ciro\ con\ ciro\ y\ los\ persas.png)
-}
-.item21 p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0 0 5px #fff;
-    cursor: pointer;
-    padding: 0px;
-    margin: 60px;
-    font-size: 60px;
-}
-
-.item21 p:hover{
-    text-shadow: 0 0 5px red;
-
-}
-.item22{
-    grid-area: img22;
-    background-image: url(.//img/ciro\ con\ ciro\ y\ los\ persas.png)
-}
-.item23{
-    grid-area: img23;
-    background-image: url(.//img/queplacer.jpg)
-}
-.item23 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item23 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item24{
-    grid-area: img24;
-    background-image: url(.//img/queplacer.jpg)
-}
-.item24 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item24 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item25{
-    grid-area: img25;
-    background-image: url(.//img/27.jpg)
-}
-.item25 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item25 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item26{
-    grid-area: img26;
-    background-image: url(.//img/27.jpg)
-}
-.item26 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item26 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item27{
-    grid-area: img27;
-    background-image: url(.//img/espejos.jpg)
-}
-.item27 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item27 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item27 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item27 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item28{
-    grid-area: img28;
-    background-image: url(.//img/espejos.jpg)
-}
-.item28 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item28 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item29{
-    grid-area: img29;
-    background-image: url(.//img/naranjapersa.jpg)
-}
-.item29 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item29 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item30{
-    grid-area: img30;
-    background-image: url(.//img/naranjapersa.jpg)
-}
-.item30 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item30 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item31{
-    grid-area: img31;
-    background-image: url(.//img/naranjapersa2.jpg)
-}
-.item31 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item31 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item32{
-    grid-area: img32;
-    background-image: url(.//img/naranjapersa2.jpg)
-}
-.item32 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item32 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item33{
-    grid-area: img33;
-    background-image: url(.//img/guerras.jpg)
-}
-.item33 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item33 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item34{
-    grid-area: img34;
-    background-image: url(.//img/guerras.jpg)
-}
-.item34 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item34 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item35{
-    grid-area: img35;
-    background-image: url(.//img/sueños.jpg)
-}
-.item35 a{
-    color: red;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item35 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-.item36{
-    grid-area: img36;
-    background-image: url(.//img/sueños.jpg)
-}
-.item36 a{
-    color: green;
-    text-shadow: 0 0 5px, 0 0 5px #000;
-}
-
-.item36 a:hover{
-    text-shadow: 0 0 5px, 0 0 5px #fff;
-    font-size: 33px;
-}
-
-
-footer{
-        background-color: rgb(255, 165, 0, 0.75);
-    height: 100px;
-    width: 100%;
-}
-
-footer p{
+    height: 100vh;
+    background: #2c3e50;
+    top: 90px;
+    left: -100%;
     text-align: center;
-    color: #fff;
-    padding-top: 5px;
-    margin-bottom: 10px;
+    transition: all 0.5s;
+    z-index: 1000;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
     font-size: 20px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: rgb(255, 153, 0);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    font-size: 20px;
+  }
+  .card {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  main h1 {
+    font-size: 20px;
+  }
+  .nombre_logo {
+    font-size: 20px;
+    transition: all 0.4s;
+  }
+  .card {
+    width: 60%;
+  }
+}
+@media (max-width: 380px) {
+  main h1 {
+    font-size: 20px;
+  }
+  figure img {
+    padding: 30px;
+  }
+  .card {
+    width: 80%;
+  }
 }
 
-.redes{
-    list-style: none;
-    display: inline-block;
-    color: #fff;
-}
-
-.redes a{
-    text-align: center;
-    color: #000;
-    font-size: 30px;
-    margin: 5px;   
-}
-
-.redes a:hover{
-    text-shadow: 0 0 5px, 0 0 5px orange;
-    color: #fff;
-}
-
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 90px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 1000;
-        
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: orange;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-
-    .imagenes{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    main{
-        font-size: 20px;
-    }
-    .card{
-        width: 50%;
-    }
-    
-        
-}
-
-@media (max-width: 700px){
-
-    main h1{
-        font-size: 20px;
-    }
-    .nombre_logo{
-        font-size: 20px;
-        transition: all .4s;
-    }
-
-    .card{
-        width: 60%;
-    }
-    
-
-}
-
-@media (max-width: 380px){
-    
-    main h1{
-        font-size: 20px;
-    }
-    figure img{
-        padding: 30px;
-    }
-        .card{
-            width: 80%;
-        }
-}
+/*# sourceMappingURL=style.css.map */
