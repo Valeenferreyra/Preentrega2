@@ -1,0 +1,108 @@
+.historias{
+    color: #fff;
+    font-family: $font3;
+    margin-top: 40px;
+    padding: 30px;
+    text-shadow: 0 0 5px $color1;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+}
+
+.historias img{
+    box-shadow: 0 0 5px $color1;
+    border-radius: 30%;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.historias h1:hover{
+    text-shadow: 0 0 5px, 0 0 5px $color1;
+    transform: scale(1.1);
+    transition: all 500ms ease-out;
+}
+
+// .mainHistoria{
+//     display: flex;
+//     text-align: center;
+//     align-items: center;
+// }
+
+
+// @mixin replace-text($image, $x: 50%, $y: 50%, $pad: 300px) {
+//     text-indent: -99999em;
+//     // overflow: hidden;
+//     text-align: center;
+//     // display: $dis;
+//     // justify-content: $just;
+//     padding: $pad;
+
+//     background: {
+//         image: $image;
+//         repeat: no-repeat;
+//         position: $x $y;
+//         // display: $dis;
+//         // justify-content: $just;
+        
+//     }
+// }
+
+// .box {
+//     @include replace-text(url(".//img/CIRORECITAL.png"));
+// }
+
+.texto{
+    color: $color1;
+    text-shadow: 0 0 5px $color5;
+    padding: 20px;
+    margin: 20px;
+}
+.texto1{
+    color: $color1;
+    text-shadow: 0 0 5px, 0 0 5px #ffffffab;
+    padding: 20px;
+    margin: 20px;
+    font-family: $font2;
+}
+.texto2{
+    color: $color4;
+    text-shadow: 0 0 5px, 0 0 5px $color6;
+    padding: 9px;
+    margin-top: 30px;
+    margin: 20px;
+    font-family: $font2;
+}
+.p{
+    color: #fff;
+    text-shadow: 0 0 5px $color1;
+}
+
+iframe{
+    padding: 20px;
+    margin: 20px;
+}
+
+.video{
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.img{
+    padding: 20px;
+    margin: 20px;
+}
+
+@mixin sizes ($width, $height, $bgcolor, $color,$line,$size) {
+    height: $height;
+    width: $width;
+    background-color: $bgcolor;
+    color: $color;
+    line-height: $line;
+    font-size: $size;
+}
+
+.mixin{
+    @include sizes (100%, 100px, rgba(0, 0, 0, 0.7), orange, 100px, 30px)
+}
+
+

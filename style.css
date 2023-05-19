@@ -26,11 +26,7 @@ body {
 
 /* .mainHistoria{
     height: 100vh;
-}
-
-/* .mainCanciones{
-    height: 100vh;
-} */
+}*/
 .mainContacto {
   height: 100vh;
 }
@@ -73,6 +69,84 @@ main {
   color: #fff;
 }
 
+.circle {
+  height: 80px;
+  width: 100px;
+  margin: auto;
+  animation-name: rebotar;
+  animation-duration: 12s;
+  animation-delay: 4s;
+  background-image: url(.//img/cirologo2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes rebotar {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(60px);
+    filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(80px);
+  }
+  11% {
+    filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  21% {
+    filter: none;
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(80px);
+  }
+  31% {
+    filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0px);
+    filter: none;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(80px);
+    filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0px);
+    filter: none;
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(80px);
+    filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(50px);
+    filter: none;
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(80px);
+    filter: none;
+    transform: rotate(-280deg);
+  }
+  100% {
+    transform: rotate(-560deg);
+    transform: translate(10px, 100px);
+    filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
+  }
+}
 .subir {
   background-color: #fff;
   height: 30px;
@@ -90,64 +164,6 @@ main {
   box-shadow: 0 0 5px rgb(255, 153, 0);
 }
 
-.historias {
-  color: #fff;
-  font-family: Bebas Neue;
-  margin-top: 40px;
-  padding: 30px;
-  text-shadow: 0 0 5px rgb(255, 153, 0);
-  transition: all 500ms ease-out;
-  cursor: pointer;
-}
-
-.historias img {
-  box-shadow: 0 0 5px rgb(255, 153, 0);
-  border-radius: 60%;
-  margin: 30px;
-  margin-bottom: 10px;
-}
-
-.historias h1:hover {
-  text-shadow: 0 0 5px, 0 0 5px rgb(255, 153, 0);
-  transform: scale(1.1);
-  transition: all 500ms ease-out;
-}
-
-.texto {
-  color: rgb(255, 153, 0);
-  text-shadow: 0 0 5px #000;
-  padding: 20px;
-  margin: 20px;
-}
-
-.texto1 {
-  color: rgb(255, 153, 0);
-  text-shadow: 0 0 5px, 0 0 5px rgba(255, 255, 255, 0.6705882353);
-  padding: 20px;
-  margin: 20px;
-  font-family: Fjalla One;
-}
-
-.p {
-  color: #fff;
-  text-shadow: 0 0 5px rgb(255, 153, 0);
-}
-
-iframe {
-  padding: 20px;
-  margin: 20px;
-}
-
-.video {
-  padding: 20px;
-  margin: 20px;
-}
-
-.img {
-  padding: 20px;
-  margin: 20px;
-}
-
 .row {
   color: rgb(255, 153, 0);
   text-shadow: 0 0 5px #000;
@@ -158,80 +174,46 @@ iframe {
   margin-left: 100px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  min-height: 80px;
+.controlsRegistrate {
+  width: 30%;
   background-color: rgb(255, 153, 0);
-  align-items: center;
-  text-align: center;
-}
-
-header a {
-  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
   color: #fff;
-  font-family: Bebas Neue;
-  padding-top: 10px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-header a:hover {
-  color: #000;
+.controlsRegistrate:hover {
+  box-shadow: 0 0 15px #fff;
 }
 
-nav {
-  height: 80px;
-  width: 100%;
+.navbar {
+  background-color: rgb(255, 153, 0) !important;
+  font-family: Bebas Neue !important;
+  font-size: 20px !important;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: #fff;
-  font-size: 18px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-
-li a.active, li a:hover {
-  background: #000;
-  transition: 0.5s;
-}
-
-.checkbtn {
+.navbar-brand {
+  color: #fff !important;
   font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
 }
 
-#check {
-  display: none;
+.nav-link {
+  color: #fff !important;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.nav-link:hover {
+  color: #000 !important;
+  text-shadow: 0 0 10px #fff !important;
 }
 
-.logo img {
-  height: 60px;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 10px;
+.nav-link.active, .nav-link:hover {
+  background: #000 !important;
+  transition: 0.5s !important;
+  border-radius: 4px !important;
 }
 
 .imagenes {
@@ -253,6 +235,8 @@ li a.active, li a:hover {
   box-shadow: 0px 10px 25px rgb(245, 242, 242);
   cursor: pointer;
   margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .imagenes figure img {
@@ -343,6 +327,82 @@ span1 {
   background-color: #000;
 }
 
+.historias {
+  color: #fff;
+  font-family: Oswald;
+  margin-top: 40px;
+  padding: 30px;
+  text-shadow: 0 0 5px rgb(255, 153, 0);
+  transition: all 500ms ease-out;
+  cursor: pointer;
+}
+
+.historias img {
+  box-shadow: 0 0 5px rgb(255, 153, 0);
+  border-radius: 30%;
+  margin: 30px;
+  margin-bottom: 10px;
+}
+
+.historias h1:hover {
+  text-shadow: 0 0 5px, 0 0 5px rgb(255, 153, 0);
+  transform: scale(1.1);
+  transition: all 500ms ease-out;
+}
+
+.texto {
+  color: rgb(255, 153, 0);
+  text-shadow: 0 0 5px #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.texto1 {
+  color: rgb(255, 153, 0);
+  text-shadow: 0 0 5px, 0 0 5px rgba(255, 255, 255, 0.6705882353);
+  padding: 20px;
+  margin: 20px;
+  font-family: Fjalla One;
+}
+
+.texto2 {
+  color: #fff;
+  text-shadow: 0 0 5px, 0 0 5px rgba(0, 0, 0, 0.7);
+  padding: 9px;
+  margin-top: 30px;
+  margin: 20px;
+  font-family: Fjalla One;
+}
+
+.p {
+  color: #fff;
+  text-shadow: 0 0 5px rgb(255, 153, 0);
+}
+
+iframe {
+  padding: 20px;
+  margin: 20px;
+}
+
+.video {
+  padding: 20px;
+  margin: 20px;
+}
+
+.img {
+  padding: 20px;
+  margin: 20px;
+}
+
+.mixin {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: orange;
+  line-height: 100px;
+  font-size: 30px;
+}
+
 .galeria {
   width: 100%;
   height: auto;
@@ -383,104 +443,158 @@ span1 {
 }
 
 .item1 {
-  background-image: url(.//img/ciro\ y\ los\ piojos.png);
+  background-image: url(.//img/ultimorecitallospiojos.jpg);
   grid-column: 1/3;
   grid-row: 1/3;
 }
 
 .item2 {
-  background-image: url(.//img/3arco.jpg);
+  background-image: url(.//img/ultimorecital2.jpg);
   grid-column: 3/4;
   grid-row: 1/2;
 }
 
 .item3 {
-  background-image: url(.//img/3arco.jpg);
+  background-image: url(.//img/cirolospiojos.jpg);
   grid-column: 4/5;
   grid-row: 1/3;
+  background-position: right;
 }
 
 .item4 {
-  background-image: url(.//img/3arco.jpg);
+  background-image: url(.//img/ultimorecital3.jpg);
   grid-column: 3/4;
   grid-row: 2/3;
 }
 
 .item5 {
-  background-image: url(.//img/maquinasangre.jpg);
+  background-image: url(.//img/ciroylospersasargentina.jpg);
   grid-column: 1/2;
   grid-row: 3/5;
 }
 
 .item6 {
-  background-image: url(.//img/maquinasangre.jpg);
+  background-image: url(.//img/ultimorecital4.jpg);
   grid-column: 2/3;
   grid-row: 3/4;
 }
 
 .item7 {
-  background-image: url(.//img/azul.jpg);
+  background-image: url(.//img/ciroylospersas3.jpg);
   grid-column: 2/3;
   grid-row: 4/5;
 }
 
 .item8 {
-  background-image: url(.//img/azul.jpg);
+  background-image: url(.//img/ciroylospersas1.jpg);
   grid-column: 3/5;
   grid-row: 3/5;
 }
 
 .item9 {
-  background-image: url(.//img/ayayay.jpg);
+  background-image: url(.//img/ciroylospersas7.jpg);
   grid-column: 1/2;
   grid-row: 5/6;
 }
 
 .item10 {
-  background-image: url(.//img/ayayay.jpg);
+  background-image: url(.//img/ciroylospersas6.jpg);
   grid-column: 2/3;
   grid-row: 5/6;
 }
 
 .item11 {
-  background-image: url(.//img/ayayay.jpg);
+  background-image: url(.//img/cirocosquin.jpg);
   grid-column: 3/5;
   grid-row: 5/6;
 }
 
 .item12 {
-  background-image: url(.//img/ayayay.jpg);
+  background-image: url(.//img/ciroylospersas4.jpg);
   grid-column: 1/3;
   grid-row: 6/7;
 }
 
 .item13 {
-  background-image: url(.//img/ayayay.jpg);
+  background-image: url(.//img/ciroylospersas5.jpg);
   grid-column: 3/4;
   grid-row: 6/7;
 }
 
 .item14 {
-  background-image: url(.//img/ayayay.jpg);
+  background-image: url(.//img/cirosimpsons.jpg);
   grid-column: 4/5;
   grid-row: 6/7;
 }
 
-.canciones {
+@media (max-width: 780px) {
+  .galeria {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: 10px;
+    grid-gap: 20px;
+  }
+  .item3 {
+    background-image: url(.//img/cirolospiojos.jpg);
+    grid-column: 1/2;
+    grid-row: 7/8;
+    background-position: right;
+  }
+  .item6 {
+    background-image: url(.//img/ultimorecital4.jpg);
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .item7 {
+    background-image: url(.//img/ciroylospersas3.jpg);
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  .item8 {
+    background-image: url(.//img/ciroylospersas1.jpg);
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .item9 {
+    background-image: url(.//img/ciroylospersas7.jpg);
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .item10 {
+    background-image: url(.//img/ciroylospersas6.jpg);
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .item11 {
+    background-image: url(.//img/cirocosquin.jpg);
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+  .item12 {
+    background-image: url(.//img/ciroylospersas4.jpg);
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+  .item13 {
+    background-image: url(.//img/ciroylospersas5.jpg);
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+  .item14 {
+    background-image: url(.//img/cirosimpsons.jpg);
+    grid-column: 3/4;
+    grid-row: 7/8;
+  }
+}
+section .canciones {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin-left: 80px;
-  margin-right: 80px;
-}
-.canciones a {
-  text-decoration: none;
-}
-
-.canciones a h3:hover {
-  color: #000;
-  text-shadow: 0 0 5px red;
+  margin: auto;
 }
 
 .albumes {
@@ -489,9 +603,17 @@ span1 {
   background-color: rgb(255, 153, 0);
   text-align: center;
   border-radius: 7px;
-  margin: 10px;
+  margin: auto;
   transition: all 1.1s;
   padding: 1px;
+}
+.albumes a {
+  text-decoration: none;
+}
+
+.albumes a h3:hover {
+  color: #000;
+  text-shadow: 0 0 5px red;
 }
 
 .albumes:hover {
@@ -687,14 +809,44 @@ span1 {
   letter-spacing: 10px;
 }
 
-.form-floating {
-  padding: 30px;
+.contactoPrincipal {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 4px;
+  font-family: Fjalla One;
+  color: rgb(255, 153, 0);
+  box-shadow: 0 0 30px #fff;
+}
+
+.controls {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
+  margin-top: 20px;
+}
+
+.contactoPrincipal .botons {
+  width: 80%;
+  background-color: rgb(255, 153, 0);
+  border: none;
+  padding: 12px;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 footer {
   background-color: rgba(255, 165, 0, 0.75);
   height: 100px;
   width: 100%;
+  padding-bottom: 0px;
+  margin-top: 300px;
 }
 
 footer p {
@@ -703,6 +855,7 @@ footer p {
   padding-top: 5px;
   margin-bottom: 10px;
   font-size: 20px;
+  font-family: Oswald;
 }
 
 .redes {
@@ -723,6 +876,32 @@ footer p {
   color: #fff;
 }
 
+@media (max-width: 1900px) {
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 20px;
+  }
+  .albumes {
+    width: 250px;
+  }
+}
+@media (max-width: 1900px) {
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 20px;
+  }
+  .albumes {
+    width: 200px;
+  }
+}
 @media (max-width: 952px) {
   .enlace {
     padding-left: 20px;
@@ -730,38 +909,19 @@ footer p {
   nav ul li a {
     font-size: 16px;
   }
-}
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    flex-direction: column;
+  .canciones1 {
     width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 90px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 1000;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 20px;
   }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
+  .albumes {
+    width: 250px;
   }
-  nav ul li a {
-    font-size: 20px;
-  }
-  li a:hover, li a.active {
-    background: none;
-    color: rgb(255, 153, 0);
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
+}
+@media (max-width: 866px) {
   .imagenes {
     display: flex;
     flex-direction: column;
@@ -772,10 +932,28 @@ footer p {
   .card {
     width: 50%;
   }
+  .contactoPrincipal {
+    width: 600px;
+  }
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 20px;
+  }
+  .albumes {
+    width: 300px;
+  }
+  footer {
+    bottom: 0;
+    margin-top: 500px;
+  }
 }
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   main h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
   .nombre_logo {
     font-size: 20px;
@@ -783,16 +961,240 @@ footer p {
   }
   .card {
     width: 60%;
+    height: 550px;
+  }
+  .contactoPrincipal {
+    width: 500px;
+  }
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 30px;
+  }
+  .albumes {
+    width: 250px;
+  }
+  footer {
+    bottom: 0;
+    margin-top: 600px;
+  }
+}
+@media (max-width: 600px) {
+  main h1 {
+    font-size: 40px;
+  }
+  .nombre_logo {
+    font-size: 20px;
+    transition: all 0.4s;
+  }
+  .card {
+    width: 60%;
+    height: 550px;
+  }
+  .contactoPrincipal {
+    width: 400px;
+  }
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 20px;
+  }
+  .albumes {
+    width: 300px;
+  }
+  footer {
+    bottom: 0;
+    margin-top: 700px;
+  }
+}
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 35px;
+  }
+  .nombre_logo {
+    font-size: 20px;
+    transition: all 0.4s;
+  }
+  .card {
+    width: 60%;
+    height: 550px;
+  }
+  .contactoPrincipal {
+    width: 370px;
+  }
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 30px;
+  }
+  footer {
+    bottom: 0;
+    margin-top: 730px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .redes a {
+    font-size: 25px;
+    padding-bottom: 5px;
   }
 }
 @media (max-width: 380px) {
   main h1 {
+    font-size: 27px;
+  }
+  .navbar-brand {
+    font-size: 25px;
+  }
+  .texto {
     font-size: 20px;
   }
-  figure img {
-    padding: 30px;
+  .imagenes figure {
+    width: 250px;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
   .card {
     width: 80%;
+  }
+  .historias h1 {
+    font-size: 25px;
+  }
+  .texto h2 {
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .texto h3 {
+    font-size: 15px;
+  }
+  .texto1 h1 {
+    width: 200px;
+    font-size: 12px;
+  }
+  .texto2 h2 {
+    width: 200px;
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .historias img {
+    width: 200px;
+    height: 100px;
+  }
+  .video video {
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  iframe {
+    width: 200px;
+    height: 200px;
+  }
+  .mixin {
+    font-size: 10px;
+  }
+  .contactoPrincipal {
+    width: 300px;
+  }
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 30px;
+  }
+  footer {
+    bottom: 0;
+    margin-top: 700px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .redes a {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-brand {
+    font-size: 23px;
+  }
+  .historias h1 {
+    font-size: 25px;
+  }
+  .texto h2 {
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .texto h3 {
+    font-size: 15px;
+  }
+  .texto1 h1 {
+    width: 200px;
+    font-size: 12px;
+  }
+  .texto2 h2 {
+    width: 200px;
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .historias img {
+    width: 200px;
+    height: 100px;
+  }
+  .video video {
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  iframe {
+    width: 200px;
+    height: 200px;
+  }
+  .mixin {
+    font-size: 10px;
+  }
+  .contactoPrincipal {
+    width: 200px;
+  }
+  .canciones1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(16, 300px);
+    grid-gap: 20px;
+  }
+  .albumes {
+    width: 200px;
+  }
+  footer {
+    bottom: 0;
+    margin-top: 500px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  .redes a {
+    font-size: 25px;
+    padding-bottom: 5px;
   }
 }/*# sourceMappingURL=style.css.map */

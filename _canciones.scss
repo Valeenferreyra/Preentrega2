@@ -1,29 +1,30 @@
-.canciones{
+section .canciones{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-        a{
-            text-decoration: none;
+    margin: auto;
         
-        }
 }
 
-.canciones a h3:hover{
-    color: $color5;
-    text-shadow: 0 0 5px $color2;
-}
+
 .albumes{
     width: 40%;
     min-height: 250px;
     background-color: $color1;
     text-align: center;
     border-radius: 7px;
-    margin: 10px;
+    margin: auto;
     transition: all 1.1s;
     padding: 1px;
+        a{
+            text-decoration: none;
+        }
+}
+
+.albumes a h3:hover{
+    color: $color5;
+    text-shadow: 0 0 5px $color2;
 }
 
 .albumes:hover{

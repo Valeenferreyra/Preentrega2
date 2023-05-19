@@ -61,6 +61,44 @@ padding: 2px;
 
 }
 
-.form-floating{
-    padding: 30px;
+// .contactoCliente{
+//     background-color: rgba(0,0,0,0.7);
+//     width: 500px;
+//     height: 400px;
+//     margin: 20px;
+//     padding: 20px;
+//     display: flex;
+//     justify-content: center;
+// }
+
+.contactoPrincipal{
+    background-color: $color6;
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: $font2;
+    color: $color1;
+    box-shadow: 0 0 30px $color4;
+}
+
+.controls{
+    width: 80%;
+    background-color: $color6;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $color1;
+    color: $color1;
+    margin-top: 20px;
+}
+
+.contactoPrincipal .botons{
+    width: 80%;
+    background-color: $color1;
+    border: none;
+    padding: 12px;
+    color: $color4;
+    font-size: 16px;
+    margin-bottom: 20px;
 }

@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrate</title>
+    <meta name="author" content="Valentín Pablo Ferreyra">
+    <meta name="keywords" content="codigo html, registrate, los piojos, ciro, ciro y los persas, rock, rock nacional, cantante">
+    <meta name="description" content="registrate a la pagina de Ciro para poder enterarte de todas las novedades sobre el gran artista argentino">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/logopiojos2.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <title>registrate</title>
+    
 </head>
 <body>
-    <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="../index.html"> <img src="../img/logopiojos2.png" alt="" width="auto" height="35" class="d-inline-block align-text-top"> ANDRÉS CIRO MARTÍNEZ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                    <a class="nav-link" href="../pages/historia.html">HISTORIA</a>
+                    <a class="nav-link" href="../pages/canciones.html">CANCIONES</a>
+                    <a class="nav-link" href="../pages/galeria.html">GALERIA</a>
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="nav-link active" href="../pages/registrate.html">REGISTRATE</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <header>
 
         
             <a href="index.html" class="logo">
@@ -40,7 +65,7 @@
             </ul>
         </nav>
     
-    </header>
+    </header> -->
 
 
 <main class="mainRegistrate">
@@ -48,89 +73,68 @@
         <form class="row g-3 mt-3">
 
             <div class="col-6">
-                <label for="name_input" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name_input" placeholder="Escribe tu nombre">
+                <label for="name_input" class="form-label"></label>
+                <input class="controls" type="text" class="form-control" id="name_input" placeholder="Escribe tu nombre">
             </div>
 
             <div class="col-6">
-                <label for="lastname_input" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="lastname_input" placeholder="Escribe tu apellido">
+                <label for="lastname_input" class="form-label"></label>
+                <input class="controls" type="text" class="form-control" id="lastname_input" placeholder="Escribe tu apellido">
             </div>
 
             <div class="col-6">
-                <label for="email_input" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email_input" placeholder="Escribe tu email">
+                <label for="email_input" class="form-label"></label>
+                <input class="controls" type="email" class="form-control" id="email_input" placeholder="Escribe tu email">
             </div>
             <div class="col-6">
-                <label for="input_pass" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="input_pass" placeholder="Escribe tu contraseña">
+                <label for="input_pass" class="form-label"></label>
+                <input class="controls" type="password" class="form-control" id="input_pass" placeholder="Escribe tu contraseña">
             </div>
 
             <div class="col-12">
-                <label for="input_address">Dirección</label>
-                <input type="text" class="form-control" id="input_address" placeholder="Dirección">
+                <label for="input_address"></label>
+                <input class="controls" type="text" class="form-control" id="input_address" placeholder="Dirección">
             </div>
 
             <div class="col-12">
-                <label for="input_address">Dirección 2</label>
-                <input type="text" class="form-control" id="input_address" placeholder="Dirección 2">
+                <label for="input_address"></label>
+                <input class="controls" type="text" class="form-control" id="input_address" placeholder="Dirección 2">
             </div>
 
             <div class="col-6">
-                <label for="input_city" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="input_city" placeholder="Ciudad">
+                <label for="input_city" class="form-label"></label>
+                <input class="controls" type="text" class="form-control" id="input_city" placeholder="Ciudad">
             </div>
 
             <div class="col-3">
-                <label for="input_postal" class="form-label">Codigo postal</label>
-                <input type="number" class="form-control" id="input_postal" placeholder="Codigo postal">
+                <label for="input_postal" class="form-label"></label>
+                <input class="controls" type="number" class="form-control" id="input_postal" placeholder="Codigo postal">
             </div>
 
             <div class="col-3">
-                <label for="input_country" class="form-label">País</label>
-                <input type="text" class="form-control" id="input_country" placeholder="País">
+                <label for="input_country" class="form-label"></label>
+                <input class="controls" type="text" class="form-control" id="input_country" placeholder="País">
             </div>
 
             <div class="input-group mb-3">
-                <input type="file" class="form-control" id="inputGroupFile02">
+                <input  type="file" class="form-control" id="inputGroupFile02">
                 <label class="input-group-text" for="inputGroupFile02">Subir</label>
             </div>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Hombre
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Mujer
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                <label class="form-check-label" for="flexRadioDefault3">
-                    No binario
-                </label>
-            </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Cuentanos sobre ti..." id="floatingTextarea2" style="height: 100px">Cuéntanos sobre ti...</textarea>
-                <label for="floatingTextarea2"></div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check_terms" placeholder="Dirección 2">
-                    <label for="check_terms" class="form-check- label">Acepto los términos</label>
-                </div>
+            <input class="sexoRegistrate" type="radio" name="sexo" id="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" id="nobinario">
+            <label for="nobinario">No Binario</label>
+                
                 
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">
-                        Registrate
-                    </button>
+                    <input class="controlsRegistrate" class="botons" type="submit" value="Registrate">
                     </div>
                 
             </div>
-            <h4>Gracias por registrate!</h4>
+            
 
         </form>
     </div>
