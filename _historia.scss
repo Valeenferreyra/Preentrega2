@@ -1,108 +1,307 @@
-.historias{
-    color: #fff;
-    font-family: $font3;
-    margin-top: 40px;
-    padding: 30px;
-    text-shadow: 0 0 5px $color1;
-    transition: all 500ms ease-out;
-    cursor: pointer;
+
+
+.tituloHistoria h1{
+        color: $color1;
+        padding: 20px;
+        margin: 20px;
+        font-family: $font1;
+        font-size: 50px;
+        text-shadow: 0 0 5px $color4;
+        transition: all 500ms;
+        cursor: pointer;
 }
 
-.historias img{
-    box-shadow: 0 0 5px $color1;
-    border-radius: 30%;
-    margin: 30px;
-    margin-bottom: 10px;
+.tituloHistoria h1:hover{
+        transition: 500ms ;
+        transform: scale(1.1);
 }
 
-.historias h1:hover{
-    text-shadow: 0 0 5px, 0 0 5px $color1;
-    transform: scale(1.1);
-    transition: all 500ms ease-out;
+.tituloHistoria img{
+    width: auto;
+    height: 350px;
+    box-shadow: 0 0 10px $color4;
+    border-radius: 20px;
 }
 
-// .mainHistoria{
-//     display: flex;
-//     text-align: center;
-//     align-items: center;
-// }
-
-
-// @mixin replace-text($image, $x: 50%, $y: 50%, $pad: 300px) {
-//     text-indent: -99999em;
-//     // overflow: hidden;
-//     text-align: center;
-//     // display: $dis;
-//     // justify-content: $just;
-//     padding: $pad;
-
-//     background: {
-//         image: $image;
-//         repeat: no-repeat;
-//         position: $x $y;
-//         // display: $dis;
-//         // justify-content: $just;
-        
-//     }
-// }
-
-// .box {
-//     @include replace-text(url(".//img/CIRORECITAL.png"));
-// }
-
-.texto{
-    color: $color1;
-    text-shadow: 0 0 5px $color5;
-    padding: 20px;
-    margin: 20px;
-}
-.texto1{
-    color: $color1;
-    text-shadow: 0 0 5px, 0 0 5px #ffffffab;
-    padding: 20px;
-    margin: 20px;
-    font-family: $font2;
-}
-.texto2{
+.textoHistoria h3{
     color: $color4;
-    text-shadow: 0 0 5px, 0 0 5px $color6;
-    padding: 9px;
+    text-shadow: 0 0 5px, 0 0 5px $color5;
+    padding: 20px;
     margin-top: 30px;
     margin: 20px;
     font-family: $font2;
+    font-size: 25px;
 }
-.p{
-    color: #fff;
+
+.textoHistoria h2{
+    color: $color4;
     text-shadow: 0 0 5px $color1;
-}
-
-iframe{
-    padding: 20px;
+    padding: 30px;
+    padding-top: 70px;
+    margin-top: 50px;
     margin: 20px;
+    font-family: $font2;
+    font-size: 25px;
 }
 
-.video{
+.iframeHistoria iframe{
+    width: 600px;
+    height: 300px;
+}
+
+.imgHistoria img{
+    width: auto;
+    height: 350px;
+    box-shadow: 0 0 10px $color1;
+    border-radius: 20px;
+    margin: 10px;
+}
+.parrafoHistoria h4{
+    font-size: 15px;
+    text-shadow: 2 8 10px $color5;
+    margin: 10px;
+}
+
+.subtituloHistoria h2{
+    color: $color1;
     padding: 20px;
-    margin: 20px;
-    
+    padding-top: 50px;
+    margin: 10px;
+    font-family: $font1;
+    font-size: 40px;
+    text-shadow: 0 0 5px $color4;
+    transition: all 500ms;
+    cursor: pointer;
 }
 
-.img{
-    padding: 20px;
-    margin: 20px;
+.videoHistoria video{
+    box-shadow: 0 0 10px $color1;
+    border-radius: 10px;
+    margin-bottom: 70px;
 }
 
-@mixin sizes ($width, $height, $bgcolor, $color,$line,$size) {
+@mixin sizes ($width, $height, $bgcolor, $color,$line,$size,$family) {
     height: $height;
     width: $width;
     background-color: $bgcolor;
     color: $color;
     line-height: $line;
     font-size: $size;
+    font-family: $family;
 }
 
 .mixin{
-    @include sizes (100%, 100px, rgba(0, 0, 0, 0.7), orange, 100px, 30px)
+    @include sizes (100%, 100px, rgba(0, 0, 0, 0.7), orange, 100px, 20px, $font3)
 }
 
 
+@media (max-width: 620px){
+
+    .iframeHistoria iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 580px){
+
+    .tituloHistoria img{
+        width: 400px;
+        height: auto;
+        box-shadow: 0 0 10px $color4;
+        border-radius: 20px;
+    }
+
+    .imgHistoria img{
+        width: 400px;
+        height: auto;
+        box-shadow: 0 0 10px $color1;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 505px){
+
+    .iframeHistoria iframe{
+        width: 400px;
+        height: 300px;
+    }
+
+    @mixin sizes ($width, $height, $bgcolor, $color,$line,$size,$family) {
+        height: $height;
+        width: $width;
+        background-color: $bgcolor;
+        color: $color;
+        line-height: $line;
+        font-size: $size;
+        font-family: $family;
+    }
+    
+    .mixin{
+        @include sizes (100%, 100px, rgba(0, 0, 0, 0.7), orange, 100px, 16px, $font3)
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .tituloHistoria img{
+        width: 350px;
+        height: auto;
+        box-shadow: 0 0 10px $color4;
+        border-radius: 20px;
+    }
+
+
+    .textoHistoria h3{
+        color: $color4;
+        text-shadow: 0 0 5px, 0 0 5px $color5;
+        padding: 20px;
+        margin-top: 30px;
+        margin: 20px;
+        font-family: $font2;
+        font-size: 20px;
+    }
+    
+    .textoHistoria h2{
+        color: $color4;
+        text-shadow: 0 0 5px $color1;
+        padding: 30px;
+        padding-top: 70px;
+        margin-top: 50px;
+        margin: 20px;
+        font-family: $font2;
+        font-size: 20px;
+    }
+    .imgHistoria img{
+        width: 350px;
+        height: auto;
+        box-shadow: 0 0 10px $color1;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .parrafoHistoria h4{
+        font-size: 18px;
+        text-shadow: 2 8 10px $color5;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+
+    .iframeHistoria iframe{
+        width: 370px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 450px){
+    .videoHistoria video{
+        box-shadow: 0 0 10px $color1;
+        border-radius: 10px;
+        margin-bottom: 70px;
+        width: 350px;
+        height: auto;
+    }
+    @mixin sizes ($width, $height, $bgcolor, $color,$line,$size,$family) {
+        height: $height;
+        width: $width;
+        background-color: $bgcolor;
+        color: $color;
+        line-height: $line;
+        font-size: $size;
+        font-family: $family;
+    }
+    
+    .mixin{
+        @include sizes (100%, 100px, rgba(0, 0, 0, 0.7), orange, 100px, 14px, $font3)
+    }
+}
+
+@media (max-width: 380px){
+
+    .tituloHistoria h1{
+        color: $color1;
+        padding: 17px;
+        margin: 20px;
+        font-family: $font1;
+        font-size: 38px;
+        text-shadow: 0 0 5px $color4;
+        transition: all 500ms;
+        cursor: pointer;
+}
+
+
+.tituloHistoria img{
+    width: 200px;
+    height: auto;
+    box-shadow: 0 0 10px $color4;
+    border-radius: 20px;
+}
+
+
+.textoHistoria h3{
+    color: $color4;
+    text-shadow: 0 0 5px, 0 0 5px $color5;
+    padding: 20px;
+    margin-top: 30px;
+    margin: 20px;
+    font-family: $font2;
+    font-size: 18px;
+}
+
+.textoHistoria h2{
+    color: $color4;
+    text-shadow: 0 0 5px $color1;
+    padding: 30px;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin: 20px;
+    font-family: $font2;
+    font-size: 18px;
+}
+.imgHistoria img{
+    width: 270px;
+    height: auto;
+    box-shadow: 0 0 10px $color1;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.parrafoHistoria h4{
+    font-size: 16px;
+    text-shadow: 2 8 10px $color5;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.iframeHistoria iframe{
+    width: 300px;
+    height: 250px;
+}
+
+.videoHistoria video{
+    box-shadow: 0 0 10px $color1;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    width: 300px;
+    height: auto;
+}
+
+@mixin sizes ($width, $height, $bgcolor, $color,$line,$size,$family) {
+    height: $height;
+    width: $width;
+    background-color: $bgcolor;
+    color: $color;
+    line-height: $line;
+    font-size: $size;
+    font-family: $family;
+}
+
+.mixin{
+    @include sizes (100%, 100px, rgba(0, 0, 0, 0.7), orange, 100px, 13px, $font3)
+}
+
+}

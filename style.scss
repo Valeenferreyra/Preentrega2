@@ -70,11 +70,9 @@ body{
 }
 
 
-main h1{
-
+.tituloIndex{
         color: $color1;
-        padding: 20px;
-        margin: 20px;
+        margin-top: 100px;
         font-family: $font1;
         font-size: 50px;
         text-shadow: 0 0 5px $color4;
@@ -83,7 +81,7 @@ main h1{
     }
     
 
-main h1:hover{
+.tituloIndex:hover{
     transition: 500ms ;
     transform: scale(1.1);
 }
@@ -94,6 +92,12 @@ span:hover{
     color: #fff;
 }
 
+.texto2 p{
+font-size: 25px;
+font-family: $font3;
+text-shadow: 0 0 10px $color1;
+padding: 30px;
+}
 main{
     color: #fff;
     
@@ -443,6 +447,8 @@ main{
         //     margin-bottom: 20px;
             
         // }
+
+        
         footer{
             bottom: 0;
             margin-top: 730px;
@@ -467,65 +473,65 @@ main{
     .navbar-brand{
         font-size: 25px;
     }
-    .texto{
-        font-size: 20px;
-    }
+    // .texto{
+    //     font-size: 20px;
+    // }
     // figure img{
     //     padding: 30px;
     // }
 
-    .imagenes figure {
-        width: 250px;
-        height: 300px;
-        object-fit: cover;
-    }
-        .card{
-            width: 80%;
-        }
+    // .imagenes figure {
+    //     width: 250px;
+    //     height: 300px;
+    //     object-fit: cover;
+    // }
+    //     .card{
+    //         width: 80%;
+    //     }
 
-        .historias h1{
-            font-size: 25px;
-        }
-        .texto {
-            h2{
-            width: 200px;
-            font-size: 20px;
-            text-align: center;
-            }
-            h3{
-                font-size: 15px;
-            }
-    }
-        .texto1 h1{
-            width: 200px;
-            font-size: 12px;
-        }
-        .texto2 h2{
-            width: 200px;
-            font-size: 12px;
-        }
-        p{
-            font-size: 12px;
-        }
-        .historias img{
-            width: 200px;
-            height: 100px;
+    //     .historias h1{
+    //         font-size: 25px;
+    //     }
+    //     .texto {
+    //         h2{
+    //         width: 200px;
+    //         font-size: 20px;
+    //         text-align: center;
+    //         }
+    //         h3{
+    //             font-size: 15px;
+    //         }
+    // }
+    //     .texto1 h1{
+    //         width: 200px;
+    //         font-size: 12px;
+    //     }
+    //     .texto2 h2{
+    //         width: 200px;
+    //         font-size: 12px;
+    //     }
+    //     p{
+    //         font-size: 12px;
+    //     }
+    //     .historias img{
+    //         width: 200px;
+    //         height: 100px;
     
-        }
-        .video video{
-            width: 200px;
-            height: 100px;
-            margin-left: 10px;
-            margin-right: 10px;
+    //     }
+    //     .video video{
+    //         width: 200px;
+    //         height: 100px;
+    //         margin-left: 10px;
+    //         margin-right: 10px;
             
-        }
-        iframe{
-            width: 200px; 
-            height: 200px; 
-        } 
-        .mixin{
-            font-size: 10px;
-        }
+    //     }
+    //     iframe{
+    //         width: 200px; 
+    //         height: 200px; 
+    //     } 
+    //     .mixin{
+    //         font-size: 10px;
+    //     }
     
 
     .contactoPrincipal{

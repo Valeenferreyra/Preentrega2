@@ -1,3 +1,19 @@
+.tituloCanciones{
+        color: $color1;
+        padding: 20px;
+        margin: 20px;
+        font-family: $font1;
+        font-size: 50px;
+        text-shadow: 0 0 5px $color4;
+        transition: all 500ms;
+        cursor: pointer;
+}
+
+.tituloCanciones:hover{
+        transition: 500ms ;
+        transform: scale(1.1);
+}
+
 section .canciones{
     display: flex;
     justify-content: center;
