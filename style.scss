@@ -249,7 +249,7 @@ main{
         height: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(16, 300px);
+        grid-template-rows: repeat(6, 300px);
         grid-gap: 20px;
         
     }
@@ -264,7 +264,7 @@ main{
         height: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(16, 300px);
+        grid-template-rows: repeat(6, 300px);
         grid-gap: 20px;
         
     }
@@ -285,7 +285,7 @@ main{
         height: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(16, 300px);
+        grid-template-rows: repeat(6, 300px);
         grid-gap: 20px;
         
     }
@@ -317,7 +317,7 @@ main{
         height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(16, 300px);
+        grid-template-rows: repeat(8, 300px);
         // padding: 10px;
         grid-gap: 20px;
         
@@ -358,7 +358,7 @@ main{
         height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(16, 300px);
+        grid-template-rows: repeat(8, 300px);
         // padding: 10px;
         grid-gap: 30px;
         
