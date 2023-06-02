@@ -20,6 +20,7 @@ section .canciones{
     align-items: center;
     padding: 10px;
     margin: auto;
+    
         
 }
 
@@ -38,6 +39,11 @@ section .canciones{
         }
 }
 
+.albumes a h3{
+    font-family: $font3;
+    color: $color4;
+}
+
 .albumes a h3:hover{
     color: $color5;
     text-shadow: 0 0 5px $color2;
@@ -51,100 +57,132 @@ section .canciones{
 
 
 .card-img1{
-background-image: url(.//img/3arco.jpg);
+background-image: url(../img/3arco.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img2{
-background-image: url(.//img/maquinasangre.jpg);
+background-image: url(..//img/maquinasangre.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img3{
-background-image: url(.//img/azul.jpg);
+background-image: url(..//img/azul.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img4{
-background-image: url(.//img/ayayay.jpg);
+background-image: url(..//img/ayayay.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img5{
-background-image: url(.//img/verdepaisaje.jpg);
+background-image: url(..//img/verdepaisaje.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img6{
-background-image: url(.//img/chac.jpg);
+background-image: url(..//img/chac.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img7{
-background-image: url(.//img/civilizacion.jpg);
+background-image: url(..//img/civilizacion.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img8{
-background-image: url(.//img/huracanes.jpg);
+background-image: url(..//img/huracanes.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img9{
-background-image: url(.//img/fantasmas.jpg);
+background-image: url(..//img/fantasmas.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img10{
-background-image: url(.//img/queplacer.jpg);
+background-image: url(..//img/queplacer.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img11{
-background-image: url(.//img/27.jpg);
+background-image: url(..//img/27.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img12{
-background-image: url(.//img/espejos.jpg);
+background-image: url(..//img/espejos.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img13{
-background-image: url(.//img/naranjapersa.jpg);
+background-image: url(..//img/naranjapersa.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img14{
-background-image: url(.//img/naranjapersa2.jpg);
+background-image: url(..//img/naranjapersa2.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img15{
-background-image: url(.//img/guerras.jpg);
+background-image: url(..//img/guerras.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 .card-img16{
-background-image: url(.//img/sueños.jpg);
+background-image: url(..//img/sueños.jpg);
 background-size: cover;
 background-position: center;
 height: 180px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
 }
 
 
@@ -159,3 +197,4 @@ height: 180px;
     // margin: 10px;
     padding-top: 18px;
 }
+

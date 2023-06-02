@@ -34,7 +34,7 @@
 
 body{
     font-family: $color2;
-    background-image: url(.//img/FONDOCIROANDRES.png);
+    background-image: url(..//img/FONDOCIROANDRES.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -73,6 +73,7 @@ body{
 .tituloIndex{
         color: $color1;
         margin-top: 100px;
+        padding: 50px;
         font-family: $font1;
         font-size: 50px;
         text-shadow: 0 0 5px $color4;
@@ -110,7 +111,7 @@ main{
     animation-name: rebotar;
     animation-duration: 12s;
     animation-delay: 4s;
-    background-image: url(.//img/cirologo2.png);
+    background-image: url(..//img/cirologo2.png);
     background-position: center;
     background-size: cover;
     
@@ -249,7 +250,7 @@ main{
         height: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 300px);
+        grid-template-rows: repeat(4, 300px);
         grid-gap: 20px;
         
     }
@@ -264,7 +265,7 @@ main{
         height: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 300px);
+        grid-template-rows: repeat(4, 300px);
         grid-gap: 20px;
         
     }
@@ -384,6 +385,10 @@ main{
         transition: all .4s;
     }
 
+    .tituloIndex h1{
+        font-size: 30px;
+    }
+
     .card{
         width: 60%;
         height: 550px;
@@ -422,6 +427,10 @@ main{
         .nombre_logo{
             font-size: 20px;
             transition: all .4s;
+        }
+
+        .tituloIndex h1{
+            font-size: 27px;
         }
     
         .card{
@@ -464,7 +473,22 @@ main{
     }
     .navbar-brand{
         font-size: 25px;
-    }    
+    }   
+
+    .imagenes figure img{
+        width: 300px;
+        margin: auto;
+    }
+    .imagenes figure{
+        width: 300px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    
+    .imagenes figure:hover > img{
+        transform: scale(1.1);
+    }
 
     .contactoPrincipal{
         width: 300px;

@@ -1,0 +1,33 @@
+
+.navbar{
+    background-color: $color1 !important;
+    font-family: $font1 !important;
+    font-size: 20px !important;
+    
+}
+
+.navbar-brand{
+    color: $color4 !important;
+    font-size: 30px;
+}
+
+.nav-link{
+    color: $color4 !important;
+    
+}
+
+.nav-link:hover{
+    color: $color5 !important;
+    text-shadow: 0 0 10px $color4 !important;
+}
+
+.nav-link.active, .nav-link:hover{
+    background: $color5 !important;
+    transition: .5s !important;
+    border-radius: 4px !important;
+}
+
+
+
+
+
